@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:  border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(179, 179, 179);
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-weight: 200;
+}
+header {
+    border-bottom: 2px solid rgb(87, 196, 247);
+}
+
+.cabecalho {
+    background-color: rgb(46, 46, 46);
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-weight: 200;
+    height: 80px;
+    box-sizing: content-box;
+}
+
+.logo {
+    display: inline-block;
+    padding: 15px;
+    height: 80px;
+}
+
+.imgLogo {
+    height: 100%;
+}
+
+.menu-toggle {
+    float: right;
+    color: #eee;
+    background-color: #555;
+    border: solid 1px #777;
+    border-radius: 5px;
+    height: 40px;
+    padding: 10px 20px;
+    margin: 20px 15px;
+}
+
+
+
+
+.menu {
+    display: inline-block;
+    vertical-align: top;
+    height: 80px;
+    padding: 25px;
+}
+
+.menu ul {
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.autenticacao {
+    float: right;
+    font-family: 'Oswald', sans-serif;
+    height: 80px;
+    padding: 25px;
+    
+}
+
+.link {
+    color: white;
+    height: 80px;
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.link:hover {
+    background-color: rgb(87, 196, 247);
+    color: black;
+}
+
+.login {
+    color: white;
+    font-size: 20px;
+}
+
+.botao {
+    background-color: red;
+    width: 110px;
+    height: 55px;
+    padding: 5px 10px;
+    border-radius: 25px;
+    color: white;
+    font-size: 20px;
+}
+
+@media(min-width:679px) {
+    .menu-toggle {
+        display: none;
+    }
+}
+
+@media(max-width: 690px) {
+    .menu {
+        display: none;
+    }
+}
+@media(max-width: 690px) {
+    .autenticacao {
+        display: none;
+    }
+}

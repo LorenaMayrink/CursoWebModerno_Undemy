@@ -1,0 +1,73 @@
+<h1>Formulário</h1>
+
+<form method="POST">
+    <input type="hidden" name="id" value="3">
+    <p>Nome</p>
+    <input type="text" name="name">
+    <p>Senha</p>
+    <input type="password" name="senha">
+    <textarea name="bio" cols="30" rows="10"></textarea>
+    <div>
+        <input type="radio" name="tipo" value="Adimin"> Adimin
+        <input type="radio" name="tipo" value="Regular"> Regular
+    </div>
+    <div>
+        <input type="checkbox" name="ativo"> Ativo
+    </div>
+
+    <select name="Estado">
+        <option value="AC">ACRE</option>
+        <option value="AL">ALAGOAS</option>
+        <option value="AP">AMAPÁ</option>
+        <option value="AM">AMAZONAS</option>
+        <option value="BA">BAHIA</option>
+        <option value="CE">CEARÁ</option>
+        <option value="DF">DISTRITO FEDERAL</option>
+        <option value="ES">VITÓRIA</option>
+        <option value="GO">GOIÂNIA</option>
+        <option value="MA">MARANHÃO</option>
+        <option value="MT">MATO GROSSO</option>
+        <option value="MS">MATO GROSOO DO SUL</option>
+        <option value="MG">MINAS GERAIS</option>
+        <option value="PA">PARÁ</option>
+        <option value="PB">PARAÍBA</option>
+        <option value="PR">PARANÁ</option>
+        <option value="PE">PERNAMBUCO</option>
+        <option value="PI">PIAUÍ</option>
+        <option value="RJ">RIO DE JANEIRO</option>
+        <option value="RN">RIO GRNADE DO NORTE</option>
+        <option value="RS">RIO GRANDE DO SUL</option>
+        <option value="RO">RONDÔNIA</option>
+        <option value="RR">RORAIMA</option>
+        <option value="SC">SANTA CATARINA</option>
+        <option value="SP">SÃO PAULO</option>
+        <option value="SE">SERGIPE</option>
+        <option value="TO">TOCANTIS</option>
+    </select>
+
+    <select name="Interesses" multiple size="5">
+        <option value="js">JacaScript</option>
+        <option value="java">Java</option>
+        <option value="php">PHP</option>
+        <option value="python">Python</option>
+        <option value="go">Go</option>
+        <option value="c">C</option>
+    </select>
+    
+    <button formaction="http://localhost:3003/usuarios">Incluir</button>
+    <button formaction="http://localhost:3003/usuarios/3">Alterar</button>
+</form>
+
+<style>
+    input,
+    textarea,
+    select {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    input[type=radio],
+    input[type=checkbox] {
+        display: inline;
+    }
+</style>

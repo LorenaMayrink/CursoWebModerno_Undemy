@@ -1,0 +1,63 @@
+ <!DOCTYPE html> <!--html versão 5-->
+ <html lang="Pt-Br">
+
+ <head>
+
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <title>Estudo de html</title>
+
+     <style>
+         #conteudo {
+             padding: 30px 0px;
+         }
+     </style>
+
+ </head>
+
+ <body>
+
+     <header><b>Exercícios HTML</b></header>
+
+     <h3>
+
+     <nav>
+         <a href="exercícios/teste.html">00-Teste</a> |
+         <a href="exercícios/texto1.html">01-Texto 1</a> |
+         <a href="exercícios/texto2.html">02-Texto 2</a> |
+         <a href="exercícios/listas.html">03-Listas</a> |
+         <a href="exercícios/links.html">04-Links</a> |
+         <a href="exercícios/tabela.html">05-tabela</a> |
+         <a href="exercícios/form/form.html">06-Formulário</a> |
+         <a href="exercícios/imagens.html">07-Imagens</a> |
+         <a href="exercícios/video.html">08-Vídeos</a> |
+         <a href="exercícios/tagsNaoVisuais.html">09-Tags</a> |
+     </nav> <!--link-->
+
+     <section id="conteudo"></section>
+
+     <aside></aside><!--barra lateral-->
+
+     <footer>Curso de Web Moderno</footer> <!--rodapé-->
+
+    </h3>
+
+     <script>
+
+         document.querySelectorAll('a').forEach(link => {
+            const conteudo = document.getElementById('conteudo')
+             link.onclick = function(e) {
+                 e.preventDefault()
+
+                 fetch(link.href)
+                 .then(resp => resp.text())
+                 .then(html => conteudo.innerHTML = html)
+                 //Esse código insere o texto na própria página ao selecionar o link
+             }
+         })
+     </script>
+     
+ </body>
+ </html>
